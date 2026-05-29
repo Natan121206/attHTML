@@ -1,0 +1,45 @@
+table{
+    width: 100%;
+    margin: 5px;
+    border-collapse: collapse;
+    margin-top: 20%;
+}
+
+caption{
+    text-decoration: underline white;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(3, 35, 94);
+}
+
+th,tr{
+    padding: 0.2%;
+    text-align: center;
+    border: 2px solid black;
+}
+th{
+    background-color: rgb(12, 107, 222);
+    color: white;
+}
+
+td{
+    color: black;
+    border: 2px solid black;
+}
+
+body{
+    background-color: rgb(69, 68, 68);
+}
+
+tr:nth-child(even){
+    background-color: rgb(195, 235, 231);
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
+td:nth-child(6){
+    background-color: rgb(152, 210, 237);
+}
+
