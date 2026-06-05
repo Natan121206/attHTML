@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            margin-top: 30px;
+            border: 3px solid rgb(9, 207, 230);
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: auto;
+            background-color: rgb(233, 233, 252);
+        }
+        h1,p{
+            text-align: center;
+        }
+        legend{
+            text-align: left;
+        }
+        label{
+            width: 100%;
+            margin:auto;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            margin: 14px;
+            width: 600px;
+            border-radius: 8px;
+            background-color: rgb(241, 243, 252);
+        }
+        .grupo{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+        .botao{
+            background-color: #82c2ec;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        .botao:hover{
+            background-color: rgb(65, 93, 231);
+        }
+        .grupo input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .grupo input:focus{
+            border-color: blue;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+    
+    </header>
+    <form>
+        <h1>Cadastro do Aluno</h1>
+        <p>Seja bem vindo ao cadastro do aluno</p>
+        <fieldset>
+        <legend>Dados de cadastro</legend>
+        <div class="grupo">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome completo" required>
+        </div>
+
+        <div class="grupo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="grupo">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="3">
+        </div>
+
+        <div class="grupo">
+            <label for="nasci">Data de Nascimento</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <input type="button" class="botao" name="salvar" id="salvar" value="Salvar">
+        
+        </fieldset>
+        <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <div class="grupo">
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso" required>
+                <option value="selecione">Selecione</option>
+                <option value="admin">Administração</option>
+                <option value="biomedicina">Biomedicina</option>
+                <option value="computacao">Computação</option>
+            </select>
+        </div>
+
+        <div class="grupo">
+             <label for="sexo">Sexo</label>
+             <input type="radio" name="sexo" id="sexo" value="masculino">
+             <label for="masculino">Masculino</label>
+             <input type="radio" name="sexo" id="sexo" value="feminino">
+             <label for="feminino">Feminino</label>
+        </div>
+
+        <div class="grupo">
+            <label for="interesse">Interesses</label>
+            <textarea name="interesse" id="interesse" placeholder="Seus interesses"></textarea>
+        </div>
+
+        <div class="grupo">
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" placeholder="Comente algo"></textarea>
+        </div>
+
+        <div class="grupo">
+            <label for="foto">Upload de Foto</label>
+            <input type="file" name="foto" id="foto">
+        </div>
+
+        <input type="button" class="botao" name="salvar" id="salvar" value="Salvar">
+
+        </fieldset>
+    </form>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
